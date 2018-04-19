@@ -44,5 +44,8 @@ def tafel(tafel, otto):
         tafellijst = tafellijst + " " + str(som)
     return tafellijst + " " + str(otto)
 
+@app.route("/quiz")
+def quiz():
+    return render_template("quiz.html")
 
 app.run(debug=True)
